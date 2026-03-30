@@ -12,16 +12,7 @@ USER_NAME=$(whoami)
 # IT help to get the OS name with this comment
 OS_NAME=$(uname -o 2>/dev/null)
 
-# help to recieve kernel version
-KERNEL_VERSION=$(uname -r 2>/dev/null)
 
-#  it might help us to get the uptime 
-if uptime >/dev/null 2>&1
-then
-  UPTIME_VALUE=$(uptime -p)
-else
-  UPTIME_VALUE="Not available in Git Bash"
-fi
 
 # help us to recieve the current date and time
 CURRENT_DATE=$(date)
