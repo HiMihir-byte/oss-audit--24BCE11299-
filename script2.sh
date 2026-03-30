@@ -12,15 +12,7 @@ echo
 echo "Checking package: $PACKAGE"
 echo "-----------------------------------------------"
 
-# Check if the command exists in PATH
-if command -v "$PACKAGE" >/dev/null 2>&1
-then
-  echo "$PACKAGE is installed."
-  # Show version line
-  $PACKAGE --version | head -n 1
-else
-  echo "$PACKAGE is NOT installed."
-fi
+
 
 echo "-----------------------------------------------"
 
